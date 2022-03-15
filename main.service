@@ -1,0 +1,22 @@
+# 실행할 Python Application 의 Service 설정
+
+[Unit]
+Description=myapp
+After=network.target
+
+[Service]
+User=root
+
+# Service 구동 시, 사용되는 환경 변수의 경로
+Environment="PATH=/home/hadoop/venv/bin"
+
+# Service 구동 시, 가상 환경 기반으로 App 실행
+ExecStart=/home/hadoop/venv/bin/python main.py
+
+# ExecStart 가 구동되는 경로 (실제 실행 파일이 존재하는 경로)
+WorkingDirectory=/home/hadoop/flask-inference-in-emr/
+
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
