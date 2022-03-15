@@ -8,13 +8,13 @@ After=network.target
 User=root
 
 # Service 구동 시, 사용되는 환경 변수의 경로
-Environment="PATH=/home/hadoop/venv/bin"
+Environment="PATH=/home/ec2-user/venv/bin"
 
 # Service 구동 시, 가상 환경 기반으로 App 실행
-ExecStart=/home/hadoop/venv/bin/python main.py
+ExecStart=/home/ec2-user/venv/bin/python main.py
 
 # ExecStart 가 구동되는 경로 (실제 실행 파일이 존재하는 경로)
-WorkingDirectory=/home/hadoop/flask-inference-in-emr/
+WorkingDirectory=/home/ec2-user/flask-inference-in-ec2/
 
 Restart=always
 
