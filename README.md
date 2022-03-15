@@ -4,7 +4,7 @@
 - AWS EC2 생성 시, EBS 볼륨 크기는 20GB로 설정 (Tensorflow 용량으로 인해)
 
   ```
-  cd /home/hadoop
+  cd /home/ec2-user
   sudo yum install git -y
   
   # flask inference application 관련 repository
