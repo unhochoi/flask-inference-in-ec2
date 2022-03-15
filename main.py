@@ -7,11 +7,11 @@ import pickle
 from sklearn.preprocessing import MinMaxScaler
 
 # Load Model
-smsm_dnn_model = tf.keras.models.load_model('/home/hadoop/dos/dos/model/smsm_dnn_model')
-smdm_dnn_model = tf.keras.models.load_model('/home/hadoop/dos/dos/model/smdm_dnn_model')
+smsm_dnn_model = tf.keras.models.load_model('/home/ec2-user/dos/dos/model/smsm_dnn_model')
+smdm_dnn_model = tf.keras.models.load_model('/home/ec2-user/dos/dos/model/smdm_dnn_model')
 
 # Load Scaler
-minmax_scaler = pickle.load(open('/home/hadoop/dos/dos/scaler/minmax_scaler.pkl','rb'))
+minmax_scaler = pickle.load(open('/home/ec2-user/dos/dos/scaler/minmax_scaler.pkl','rb'))
 
 app = Flask(__name__)
 
