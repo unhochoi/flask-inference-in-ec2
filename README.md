@@ -40,5 +40,5 @@
 - main.py 는 수정에 따라 실시간으로 반영됨
 
   ```
-  vi /home/ec2-user/flask-inference-in-ec2/main.py
+  sudo vi /home/ec2-user/flask-inference-in-ec2/main.py
   ```
