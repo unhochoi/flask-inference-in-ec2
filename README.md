@@ -14,6 +14,7 @@
   sudo git clone https://github.com/kmu-bigdata/dos.git
   
   ./flask-inference-in-ec2/start.sh
+  
   ```
 - main.service 구동 확인
 
